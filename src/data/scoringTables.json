@@ -1,0 +1,316 @@
+{
+  "male": {
+    "17-21": {
+      "MDL": [
+        { "min": 0, "max": 139, "points": 0 },
+        { "min": 140, "max": 140, "points": 60 },
+        { "min": 141, "max": 150, "points": 65 },
+        { "min": 151, "max": 160, "points": 70 },
+        { "min": 161, "max": 170, "points": 75 },
+        { "min": 171, "max": 180, "points": 80 },
+        { "min": 181, "max": 190, "points": 85 },
+        { "min": 191, "max": 200, "points": 90 },
+        { "min": 201, "max": 210, "points": 95 },
+        { "min": 211, "max": 999, "points": 100 }
+      ],
+      "SPT": [
+        { "min": 0, "max": 5.9, "points": 0 },
+        { "min": 6.0, "max": 6.0, "points": 60 },
+        { "min": 6.1, "max": 6.5, "points": 65 },
+        { "min": 6.6, "max": 7.0, "points": 70 },
+        { "min": 7.1, "max": 7.5, "points": 75 },
+        { "min": 7.6, "max": 8.0, "points": 80 },
+        { "min": 8.1, "max": 8.5, "points": 85 },
+        { "min": 8.6, "max": 9.0, "points": 90 },
+        { "min": 9.1, "max": 9.5, "points": 95 },
+        { "min": 9.6, "max": 12.0, "points": 100 }
+      ],
+      "HRP": [
+        { "min": 0, "max": 9, "points": 0 },
+        { "min": 10, "max": 10, "points": 60 },
+        { "min": 11, "max": 15, "points": 65 },
+        { "min": 16, "max": 20, "points": 70 },
+        { "min": 21, "max": 25, "points": 75 },
+        { "min": 26, "max": 30, "points": 80 },
+        { "min": 31, "max": 35, "points": 85 },
+        { "min": 36, "max": 40, "points": 90 },
+        { "min": 41, "max": 45, "points": 95 },
+        { "min": 46, "max": 100, "points": 100 }
+      ],
+      "SDC": [
+        { "min": 3.0, "max": 3.0, "points": 60 },
+        { "min": 2.9, "max": 2.8, "points": 65 },
+        { "min": 2.7, "max": 2.6, "points": 70 },
+        { "min": 2.5, "max": 2.4, "points": 75 },
+        { "min": 2.3, "max": 2.2, "points": 80 },
+        { "min": 2.1, "max": 2.0, "points": 85 },
+        { "min": 1.9, "max": 1.8, "points": 90 },
+        { "min": 1.7, "max": 1.6, "points": 95 },
+        { "min": 0.0, "max": 1.5, "points": 100 }
+      ],
+      "PLK": [
+        { "min": 0, "max": 0.9, "points": 0 },
+        { "min": 1.0, "max": 1.0, "points": 60 },
+        { "min": 1.1, "max": 1.5, "points": 65 },
+        { "min": 1.6, "max": 2.0, "points": 70 },
+        { "min": 2.1, "max": 2.5, "points": 75 },
+        { "min": 2.6, "max": 3.0, "points": 80 },
+        { "min": 3.1, "max": 3.5, "points": 85 },
+        { "min": 3.6, "max": 4.0, "points": 90 },
+        { "min": 4.1, "max": 4.5, "points": 95 },
+        { "min": 4.6, "max": 6.0, "points": 100 }
+      ],
+      "2MR": [
+        { "min": 24.1, "max": 999, "points": 0 },
+        { "min": 21.0, "max": 21.0, "points": 60 },
+        { "min": 20.9, "max": 20.0, "points": 65 },
+        { "min": 19.9, "max": 19.0, "points": 70 },
+        { "min": 18.9, "max": 18.0, "points": 75 },
+        { "min": 17.9, "max": 17.0, "points": 80 },
+        { "min": 16.9, "max": 16.0, "points": 85 },
+        { "min": 15.9, "max": 15.0, "points": 90 },
+        { "min": 14.9, "max": 14.0, "points": 95 },
+        { "min": 0.0, "max": 13.9, "points": 100 }
+      ]
+    },
+    "22-26": {
+      "MDL": [
+        { "min": 0, "max": 139, "points": 0 },
+        { "min": 140, "max": 140, "points": 60 },
+        { "min": 141, "max": 150, "points": 65 },
+        { "min": 151, "max": 160, "points": 70 },
+        { "min": 161, "max": 170, "points": 75 },
+        { "min": 171, "max": 180, "points": 80 },
+        { "min": 181, "max": 190, "points": 85 },
+        { "min": 191, "max": 200, "points": 90 },
+        { "min": 201, "max": 210, "points": 95 },
+        { "min": 211, "max": 999, "points": 100 }
+      ],
+      "SPT": [
+        { "min": 0, "max": 5.9, "points": 0 },
+        { "min": 6.0, "max": 6.0, "points": 60 },
+        { "min": 6.1, "max": 6.5, "points": 65 },
+        { "min": 6.6, "max": 7.0, "points": 70 },
+        { "min": 7.1, "max": 7.5, "points": 75 },
+        { "min": 7.6, "max": 8.0, "points": 80 },
+        { "min": 8.1, "max": 8.5, "points": 85 },
+        { "min": 8.6, "max": 9.0, "points": 90 },
+        { "min": 9.1, "max": 9.5, "points": 95 },
+        { "min": 9.6, "max": 12.0, "points": 100 }
+      ],
+      "HRP": [
+        { "min": 0, "max": 9, "points": 0 },
+        { "min": 10, "max": 10, "points": 60 },
+        { "min": 11, "max": 15, "points": 65 },
+        { "min": 16, "max": 20, "points": 70 },
+        { "min": 21, "max": 25, "points": 75 },
+        { "min": 26, "max": 30, "points": 80 },
+        { "min": 31, "max": 35, "points": 85 },
+        { "min": 36, "max": 40, "points": 90 },
+        { "min": 41, "max": 45, "points": 95 },
+        { "min": 46, "max": 100, "points": 100 }
+      ],
+      "SDC": [
+        { "min": 3.0, "max": 3.0, "points": 60 },
+        { "min": 2.9, "max": 2.8, "points": 65 },
+        { "min": 2.7, "max": 2.6, "points": 70 },
+        { "min": 2.5, "max": 2.4, "points": 75 },
+        { "min": 2.3, "max": 2.2, "points": 80 },
+        { "min": 2.1, "max": 2.0, "points": 85 },
+        { "min": 1.9, "max": 1.8, "points": 90 },
+        { "min": 1.7, "max": 1.6, "points": 95 },
+        { "min": 0.0, "max": 1.5, "points": 100 }
+      ],
+      "PLK": [
+        { "min": 0, "max": 0.9, "points": 0 },
+        { "min": 1.0, "max": 1.0, "points": 60 },
+        { "min": 1.1, "max": 1.5, "points": 65 },
+        { "min": 1.6, "max": 2.0, "points": 70 },
+        { "min": 2.1, "max": 2.5, "points": 75 },
+        { "min": 2.6, "max": 3.0, "points": 80 },
+        { "min": 3.1, "max": 3.5, "points": 85 },
+        { "min": 3.6, "max": 4.0, "points": 90 },
+        { "min": 4.1, "max": 4.5, "points": 95 },
+        { "min": 4.6, "max": 6.0, "points": 100 }
+      ],
+      "2MR": [
+        { "min": 24.1, "max": 999, "points": 0 },
+        { "min": 21.0, "max": 21.0, "points": 60 },
+        { "min": 20.9, "max": 20.0, "points": 65 },
+        { "min": 19.9, "max": 19.0, "points": 70 },
+        { "min": 18.9, "max": 18.0, "points": 75 },
+        { "min": 17.9, "max": 17.0, "points": 80 },
+        { "min": 16.9, "max": 16.0, "points": 85 },
+        { "min": 15.9, "max": 15.0, "points": 90 },
+        { "min": 14.9, "max": 14.0, "points": 95 },
+        { "min": 0.0, "max": 13.9, "points": 100 }
+      ]
+    }
+  },
+  "female": {
+    "17-21": {
+      "MDL": [
+        { "min": 0, "max": 60, "points": 0 },
+        { "min": 61, "max": 70, "points": 60 },
+        { "min": 71, "max": 80, "points": 65 },
+        { "min": 81, "max": 90, "points": 70 },
+        { "min": 91, "max": 100, "points": 75 },
+        { "min": 101, "max": 110, "points": 80 },
+        { "min": 111, "max": 120, "points": 85 },
+        { "min": 121, "max": 130, "points": 90 },
+        { "min": 131, "max": 140, "points": 95 },
+        { "min": 141, "max": 210, "points": 100 }
+      ],
+      "SPT": [
+        { "min": 0, "max": 2.6, "points": 0 },
+        { "min": 2.7, "max": 3.0, "points": 60 },
+        { "min": 3.1, "max": 3.5, "points": 65 },
+        { "min": 3.6, "max": 4.0, "points": 70 },
+        { "min": 4.1, "max": 4.5, "points": 75 },
+        { "min": 4.6, "max": 5.0, "points": 80 },
+        { "min": 5.1, "max": 5.5, "points": 85 },
+        { "min": 5.6, "max": 6.0, "points": 90 },
+        { "min": 6.1, "max": 6.5, "points": 95 },
+        { "min": 6.6, "max": 8.4, "points": 100 }
+      ],
+      "HRP": [
+        { "min": 0, "max": 4, "points": 0 },
+        { "min": 5, "max": 8, "points": 60 },
+        { "min": 9, "max": 12, "points": 65 },
+        { "min": 13, "max": 16, "points": 70 },
+        { "min": 17, "max": 20, "points": 75 },
+        { "min": 21, "max": 24, "points": 80 },
+        { "min": 25, "max": 28, "points": 85 },
+        { "min": 29, "max": 32, "points": 90 },
+        { "min": 33, "max": 36, "points": 95 },
+        { "min": 37, "max": 53, "points": 100 }
+      ],
+      "SDC": [
+        { "min": 4.3, "max": 999, "points": 0 },
+        { "min": 4.2, "max": 4.1, "points": 60 },
+        { "min": 4.0, "max": 3.9, "points": 65 },
+        { "min": 3.8, "max": 3.7, "points": 70 },
+        { "min": 3.6, "max": 3.5, "points": 75 },
+        { "min": 3.4, "max": 3.3, "points": 80 },
+        { "min": 3.2, "max": 3.1, "points": 85 },
+        { "min": 3.0, "max": 2.9, "points": 90 },
+        { "min": 2.8, "max": 2.7, "points": 95 },
+        { "min": 0.0, "max": 2.6, "points": 100 }
+      ],
+      "PLK": [
+        { "min": 0, "max": 1.0, "points": 0 },
+        { "min": 1.1, "max": 1.5, "points": 60 },
+        { "min": 1.6, "max": 2.0, "points": 65 },
+        { "min": 2.1, "max": 2.5, "points": 70 },
+        { "min": 2.6, "max": 3.0, "points": 75 },
+        { "min": 3.1, "max": 3.5, "points": 80 },
+        { "min": 3.6, "max": 4.0, "points": 85 },
+        { "min": 4.1, "max": 4.5, "points": 90 },
+        { "min": 4.6, "max": 5.0, "points": 95 },
+        { "min": 5.1, "max": 6.0, "points": 100 }
+      ],
+      "2MR": [
+        { "min": 25.4, "max": 999, "points": 0 },
+        { "min": 25.3, "max": 25.0, "points": 60 },
+        { "min": 24.9, "max": 24.0, "points": 65 },
+        { "min": 23.9, "max": 23.0, "points": 70 },
+        { "min": 22.9, "max": 22.0, "points": 75 },
+        { "min": 21.9, "max": 21.0, "points": 80 },
+        { "min": 20.9, "max": 20.0, "points": 85 },
+        { "min": 19.9, "max": 19.0, "points": 90 },
+        { "min": 18.9, "max": 18.0, "points": 95 },
+        { "min": 0.0, "max": 17.9, "points": 100 }
+      ]
+    },
+    "22-26": {
+      "MDL": [
+        { "min": 0, "max": 83, "points": 0 },
+        { "min": 84, "max": 84, "points": 60 },
+        { "min": 85, "max": 95, "points": 65 },
+        { "min": 96, "max": 105, "points": 70 },
+        { "min": 106, "max": 115, "points": 75 },
+        { "min": 116, "max": 125, "points": 80 },
+        { "min": 126, "max": 135, "points": 85 },
+        { "min": 136, "max": 145, "points": 90 },
+        { "min": 146, "max": 155, "points": 95 },
+        { "min": 156, "max": 999, "points": 100 }
+      ],
+      "SPT": [
+        { "min": 0, "max": 3.9, "points": 0 },
+        { "min": 4.0, "max": 4.0, "points": 60 },
+        { "min": 4.1, "max": 4.5, "points": 65 },
+        { "min": 4.6, "max": 5.0, "points": 70 },
+        { "min": 5.1, "max": 5.5, "points": 75 },
+        { "min": 5.6, "max": 6.0, "points": 80 },
+        { "min": 6.1, "max": 6.5, "points": 85 },
+        { "min": 6.6, "max": 7.0, "points": 90 },
+        { "min": 7.1, "max": 7.5, "points": 95 },
+        { "min": 7.6, "max": 10.0, "points": 100 }
+      ],
+      "HRP": [
+        { "min": 0, "max": 9, "points": 0 },
+        { "min": 10, "max": 10, "points": 60 },
+        { "min": 11, "max": 15, "points": 65 },
+        { "min": 16, "max": 20, "points": 70 },
+        { "min": 21, "max": 25, "points": 75 },
+        { "min": 26, "max": 30, "points": 80 },
+        { "min": 31, "max": 35, "points": 85 },
+        { "min": 36, "max": 40, "points": 90 },
+        { "min": 41, "max": 45, "points": 95 },
+        { "min": 46, "max": 100, "points": 100 }
+      ],
+      "SDC": [
+        { "min": 3.0, "max": 3.0, "points": 60 },
+        { "min": 2.9, "max": 2.8, "points": 65 },
+        { "min": 2.7, "max": 2.6, "points": 70 },
+        { "min": 2.5, "max": 2.4, "points": 75 },
+        { "min": 2.3, "max": 2.2, "points": 80 },
+        { "min": 2.1, "max": 2.0, "points": 85 },
+        { "min": 1.9, "max": 1.8, "points": 90 },
+        { "min": 1.7, "max": 1.6, "points": 95 },
+        { "min": 0.0, "max": 1.5, "points": 100 }
+      ],
+      "PLK": [
+        { "min": 0, "max": 0.9, "points": 0 },
+        { "min": 1.0, "max": 1.0, "points": 60 },
+        { "min": 1.1, "max": 1.5, "points": 65 },
+        { "min": 1.6, "max": 2.0, "points": 70 },
+        { "min": 2.1, "max": 2.5, "points": 75 },
+        { "min": 2.6, "max": 3.0, "points": 80 },
+        { "min": 3.1, "max": 3.5, "points": 85 },
+        { "min": 3.6, "max": 4.0, "points": 90 },
+        { "min": 4.1, "max": 4.5, "points": 95 },
+        { "min": 4.6, "max": 6.0, "points": 100 }
+      ],
+      "2MR": [
+        { "min": 24.1, "max": 999, "points": 0 },
+        { "min": 24.0, "max": 24.0, "points": 60 },
+        { "min": 23.9, "max": 23.0, "points": 65 },
+        { "min": 22.9, "max": 22.0, "points": 70 },
+        { "min": 21.9, "max": 21.0, "points": 75 },
+        { "min": 20.9, "max": 20.0, "points": 80 },
+        { "min": 19.9, "max": 19.0, "points": 85 },
+        { "min": 18.9, "max": 18.0, "points": 90 },
+        { "min": 17.9, "max": 17.0, "points": 95 },
+        { "min": 0.0, "max": 16.9, "points": 100 }
+      ]
+    }
+  },
+  "mosCategories": {
+    "Heavy": {
+      "minimumTotal": 440,
+      "minimumPerEvent": 60,
+      "description": "Combat Arms and other physically demanding MOSs"
+    },
+    "Significant": {
+      "minimumTotal": 400,
+      "minimumPerEvent": 60,
+      "description": "Moderate physical demands"
+    },
+    "Moderate": {
+      "minimumTotal": 360,
+      "minimumPerEvent": 60,
+      "description": "Lower physical demands"
+    }
+  }
+}
