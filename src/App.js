@@ -11,6 +11,7 @@ import Footer from './components/Footer';
 import MaintenanceWrapper from './components/MaintenanceWrapper';
 import AdminPage from './pages/AdminPage';
 import ErrorBoundary from './components/ErrorBoundary';
+import SEO from './components/SEO';
 import { initializeTitleAndLogo, setupTitleLogoListeners } from './utils/titleLogoService';
 import './App.css';
 
@@ -31,12 +32,17 @@ function App() {
               <AdminPage />
             </ErrorBoundary>
           } />
-          
+
           {/* Main App Route - Wrapped in maintenance mode check */}
           <Route path="/*" element={
             <ErrorBoundary>
               <MaintenanceWrapper>
                 <div className="App">
+                  <SEO
+                    title="Official ACFT Score Calculator 2026"
+                    description="Calculate your Army Combat Fitness Test (ACFT) score easily. Support for all age groups, MOS physical demand categories, and latest scoring standards."
+                    canonical="/"
+                  />
                   <Header />
                   <Hero />
                   <Calculator />
