@@ -3,4 +3,4 @@ User-agent: *
 Disallow: /admin
 Disallow: /admin/*
 
-Sitemap: https://www.armyacftcalculatororg.org/sitemap.xml
+Sitemap: https://www.armyacftcalculatororg.org/sitemap.xml 
