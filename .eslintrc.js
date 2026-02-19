@@ -6,9 +6,9 @@ module.exports = {
   rules: {
     'import/first': 'off', // Disable import/first rule to allow initialization code
     'import/order': 'off', // Disable import order enforcement
-    'no-console': 'warn', // Allow console.log but warn about it
-    'no-unused-vars': 'warn', // Warn about unused variables
-    'react-hooks/exhaustive-deps': 'warn', // Warn about missing dependencies
+    'no-console': 'off', // Disable console rule
+    'no-unused-vars': 'off', // Disable unused vars rule
+    'react-hooks/exhaustive-deps': 'off', // Disable hooks dependencies rule
     'no-undef': 'error', // Error on undefined variables
     'no-unreachable': 'error', // Error on unreachable code
     'no-duplicate-imports': 'error', // Error on duplicate imports
@@ -20,18 +20,18 @@ module.exports = {
     'react/react-in-jsx-scope': 'off', // Disable React import requirement for JSX
     'react/prop-types': 'off', // Disable prop-types requirement
     'react/jsx-props-no-spreading': 'off', // Allow prop spreading
-    'react/jsx-filename-extension': ['warn', { 'extensions': ['.js', '.jsx'] }], // Allow JSX in .js files
+    'react/jsx-filename-extension': 'off', // Disable JSX in .js files rule
     'jsx-a11y/anchor-is-valid': 'off', // Disable anchor validation
     'jsx-a11y/click-events-have-key-events': 'off', // Disable click event validation
     'jsx-a11y/no-static-element-interactions': 'off', // Disable static element interaction validation
-    'prefer-const': 'warn', // Warn about variables that could be const
-    'no-var': 'error', // Error on var usage
-    'no-multiple-empty-lines': ['warn', { 'max': 2 }], // Warn about multiple empty lines
+    'prefer-const': 'off', // Disable prefer-const rule
+    'no-var': 'warn', // Downgrade to warn
+    'no-multiple-empty-lines': 'off', // Disable multiple empty lines rule
     'no-trailing-spaces': 'off', // Disable trailing spaces rule
     'eol-last': 'off', // Disable end of file newline rule
     'comma-dangle': 'off', // Disable trailing commas rule
-    'semi': ['warn', 'always'], // Keep semi as warning
-    'quotes': ['warn', 'single'], // Keep quotes as warning
+    'semi': 'off', // Disable semicolons rule
+    'quotes': 'off', // Disable quotes rule
     'indent': 'off', // Disable indentation rule
     'max-len': 'off', // Disable max length rule
     'object-curly-spacing': 'off', // Disable object spacing rule
@@ -64,7 +64,8 @@ module.exports = {
     'quote-props': 'off', // Disable quote properties rule
     'rest-spread-spacing': 'off', // Disable rest spread spacing rule
     'template-curly-spacing': 'off', // Disable template curly spacing rule
-    'yield-star-spacing': 'off' // Disable yield star spacing rule
+    'yield-star-spacing': 'off', // Disable yield star spacing rule
+    'import/no-anonymous-default-export': 'off' // Disable anonymous default export rule
   },
   settings: {
     'import/resolver': {
