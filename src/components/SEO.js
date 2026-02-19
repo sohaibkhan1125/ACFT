@@ -20,8 +20,9 @@ const SEO = ({ title, description, canonical, noindex = false }) => {
       {/* Basic Meta Tags */}
       <title>{fullTitle}</title>
       <meta name="description" content={description} />
+      <meta name="google-site-verification" content="7t1QrOBi8xyTmghLgUAcS7fSuUnuiWywW3GSo9-TNBE" />
       {canonical && <link rel="canonical" href={fullCanonical} />}
-      
+
       {/* Robots indexing */}
       {noindex ? (
         <meta name="robots" content="noindex, nofollow" />
