@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { calculateTotalScore, determinePassFail, validateInputs, getAgeGroups, timeStringToSeconds, secondsToTimeString } from '../utils/scoringLogic';
 import { calculateTotalScoreOfficial, determinePassFailOfficial, getDebugInfo } from '../utils/officialScoringLogic';
 import { getDefaultValues, getSliderRanges } from '../utils/defaultValues';
@@ -64,7 +64,7 @@ const Calculator = () => {
           plk: formData.plk / 60, // Convert seconds to minutes
           twoMR: formData.twoMR / 60 // Convert seconds to minutes
         };
-        
+
         const scoreData = calculateTotalScoreOfficial(calculationData);
         const passFailData = determinePassFailOfficial(scoreData.totalScore, scoreData.eventPoints, 'Heavy');
         return { ...scoreData, ...passFailData };
@@ -85,7 +85,7 @@ const Calculator = () => {
 
   const handleInputChange = (field, value) => {
     setFormData(prev => ({ ...prev, [field]: value }));
-    
+
     // Clear errors for this field
     if (errors[field]) {
       setErrors(prev => ({ ...prev, [field]: undefined }));
@@ -94,7 +94,7 @@ const Calculator = () => {
 
   const handleSliderChange = (field, value) => {
     setFormData(prev => ({ ...prev, [field]: value }));
-    
+
     // Clear errors for this field
     if (errors[field]) {
       setErrors(prev => ({ ...prev, [field]: undefined }));
@@ -111,7 +111,7 @@ const Calculator = () => {
           plk: updatedData.plk / 60,
           twoMR: updatedData.twoMR / 60
         };
-        
+
         const scoreData = calculateTotalScore(calculationData);
         const passFailData = determinePassFail(scoreData.totalScore, scoreData.eventPoints, 'Heavy');
         setResults({ ...scoreData, ...passFailData });
@@ -122,10 +122,10 @@ const Calculator = () => {
   const handleCalculate = () => {
     console.log('Calculate button clicked');
     console.log('Form data:', formData);
-    
+
     const validation = validateInputs(formData);
     console.log('Validation result:', validation);
-    
+
     if (!validation.isValid) {
       console.log('Validation failed:', validation.errors);
       setErrors(validation.errors);
@@ -144,22 +144,22 @@ const Calculator = () => {
 
     const scoreData = calculateTotalScoreOfficial(calculationData);
     console.log('Score data:', scoreData);
-    
+
     const passFailData = determinePassFailOfficial(scoreData.totalScore, scoreData.eventPoints, 'Heavy');
     console.log('Pass/fail data:', passFailData);
-    
+
     const finalResults = { ...scoreData, ...passFailData };
     console.log('Final results:', finalResults);
-    
+
     setResults(finalResults);
     setErrors({});
   };
 
   const handleShare = () => {
     if (!results) return;
-    
+
     const shareText = `ACFT Score: ${results.totalScore}/600 - ${results.passed ? 'PASSED' : 'FAILED'} (Heavy Category)`;
-    
+
     if (navigator.share) {
       navigator.share({
         title: 'ACFT Calculator Results',
@@ -197,9 +197,8 @@ const Calculator = () => {
               <select
                 value={formData.sex}
                 onChange={(e) => handleInputChange('sex', e.target.value)}
-                className={`w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-400 ${
-                  errors.sex ? 'border-red-500' : 'border-gray-300'
-                }`}
+                className={`w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-400 ${errors.sex ? 'border-red-500' : 'border-gray-300'
+                  }`}
               >
                 <option value="">Select Sex</option>
                 <option value="male">Male</option>
@@ -215,9 +214,8 @@ const Calculator = () => {
               <select
                 value={formData.ageGroup}
                 onChange={(e) => handleInputChange('ageGroup', e.target.value)}
-                className={`w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-400 ${
-                  errors.ageGroup ? 'border-red-500' : 'border-gray-300'
-                }`}
+                className={`w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-400 ${errors.ageGroup ? 'border-red-500' : 'border-gray-300'
+                  }`}
               >
                 <option value="">Select Age Group</option>
                 {ageGroups.map(age => (
@@ -298,7 +296,7 @@ const Calculator = () => {
         {/* Sliders Section */}
         <div className="bg-white rounded-lg shadow-lg p-6 mb-8">
           <h3 className="text-2xl font-bold text-gray-900 mb-6">Adjust Your Performance</h3>
-          
+
           <div className="space-y-6">
             {/* MDL */}
             <ModernSlider
@@ -389,7 +387,7 @@ const Calculator = () => {
           >
             🧮 Calculate My Score
           </button>
-          
+
           {/* Error Display */}
           {Object.keys(errors).length > 0 && (
             <div className="mt-4 p-4 bg-red-100 border border-red-300 rounded-lg">
@@ -399,7 +397,7 @@ const Calculator = () => {
               ))}
             </div>
           )}
-          
+
           {/* Debug Info */}
           <div className="mt-4 p-4 bg-gray-100 rounded-lg">
             <h4 className="font-bold text-sm mb-2">Debug Info:</h4>
@@ -422,7 +420,7 @@ const Calculator = () => {
                   <span className="font-semibold">Age Group:</span>
                   <span>{formData.ageGroup}</span>
                 </div>
-                
+
                 {Object.entries(results.debugInfo).map(([event, debug]) => (
                   <div key={event} className="border border-blue-200 rounded p-2 bg-white">
                     <div className="font-semibold text-blue-700">{event}:</div>
@@ -434,12 +432,12 @@ const Calculator = () => {
                     </div>
                   </div>
                 ))}
-                
+
                 <div className="mt-2 p-2 bg-green-100 border border-green-300 rounded">
                   <div className="font-semibold text-green-800">Total Score: {results.totalScore}/600</div>
                   <div className="text-green-700">
-                    Status: {results.passed ? 'PASSED' : 'FAILED'} 
-                    {!results.passed && results.eventFailures.length > 0 && 
+                    Status: {results.passed ? 'PASSED' : 'FAILED'}
+                    {!results.passed && results.eventFailures.length > 0 &&
                       ` (Failed events: ${results.eventFailures.join(', ')})`
                     }
                   </div>
@@ -453,7 +451,7 @@ const Calculator = () => {
         {results && (
           <div className="bg-white rounded-lg shadow-lg p-6">
             <h3 className="text-2xl font-bold text-gray-900 mb-6">Results</h3>
-            
+
             <div className="space-y-6">
               {/* Total Score */}
               <div className="text-center">
@@ -463,9 +461,8 @@ const Calculator = () => {
                 <div className="text-lg font-semibold mb-2">
                   Results:
                 </div>
-                <div className={`text-lg font-semibold ${
-                  results.passed ? 'text-green-600' : 'text-red-600'
-                }`}>
+                <div className={`text-lg font-semibold ${results.passed ? 'text-green-600' : 'text-red-600'
+                  }`}>
                   {results.passed ? 'Meets Army Minimum Standard' : 'Does Not Meet Army Minimum Standard'}
                 </div>
               </div>
@@ -476,9 +473,8 @@ const Calculator = () => {
                 {Object.entries(results.eventPoints).map(([event, points]) => (
                   <div key={event} className="flex justify-between items-center py-2 border-b border-gray-200">
                     <span className="font-medium">{event}</span>
-                    <span className={`font-bold ${
-                      points >= 60 ? 'text-green-600' : 'text-red-600'
-                    }`}>
+                    <span className={`font-bold ${points >= 60 ? 'text-green-600' : 'text-red-600'
+                      }`}>
                       {points} pts
                     </span>
                   </div>
@@ -489,15 +485,13 @@ const Calculator = () => {
               <div className="bg-gray-50 p-4 rounded-lg">
                 <h4 className="font-semibold text-gray-900 mb-2">Requirements:</h4>
                 <div className="space-y-1 text-sm">
-                  <div className={`flex justify-between ${
-                    results.totalPassed ? 'text-green-600' : 'text-red-600'
-                  }`}>
+                  <div className={`flex justify-between ${results.totalPassed ? 'text-green-600' : 'text-red-600'
+                    }`}>
                     <span>Total Score: {results.minimumRequired}+</span>
                     <span>{results.totalScore}/{results.minimumRequired}</span>
                   </div>
-                  <div className={`flex justify-between ${
-                    results.allEventsPassed ? 'text-green-600' : 'text-red-600'
-                  }`}>
+                  <div className={`flex justify-between ${results.allEventsPassed ? 'text-green-600' : 'text-red-600'
+                    }`}>
                     <span>All Events: 60+ points</span>
                     <span>{results.allEventsPassed ? '✓' : '✗'}</span>
                   </div>

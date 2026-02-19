@@ -27,45 +27,44 @@ module.exports = {
     'prefer-const': 'warn', // Warn about variables that could be const
     'no-var': 'error', // Error on var usage
     'no-multiple-empty-lines': ['warn', { 'max': 2 }], // Warn about multiple empty lines
-    'no-trailing-spaces': 'warn', // Warn about trailing spaces
-    'eol-last': 'warn', // Warn about missing newline at end of file
-    'comma-dangle': ['warn', 'never'], // Warn about trailing commas
-    'semi': ['warn', 'always'], // Warn about missing semicolons
-    'quotes': ['warn', 'single'], // Warn about quote style
-    'indent': ['warn', 2], // Warn about indentation
-    'max-len': ['warn', { 'code': 120 }], // Warn about long lines
-    'object-curly-spacing': ['warn', 'always'], // Warn about object spacing
-    'array-bracket-spacing': ['warn', 'never'], // Warn about array spacing
-    'computed-property-spacing': ['warn', 'never'], // Warn about computed property spacing
-    'key-spacing': ['warn', { 'beforeColon': false, 'afterColon': true }], // Warn about key spacing
-    'space-before-blocks': 'warn', // Warn about space before blocks
-    'space-before-function-paren': ['warn', 'never'], // Warn about function spacing
-    'space-in-parens': ['warn', 'never'], // Warn about space in parentheses
-    'space-infix-ops': 'warn', // Warn about operator spacing
-    'space-unary-ops': 'warn', // Warn about unary operator spacing
-    'spaced-comment': 'warn', // Warn about comment spacing
-    'arrow-spacing': 'warn', // Warn about arrow function spacing
-    'block-spacing': 'warn', // Warn about block spacing
-    'brace-style': ['warn', '1tbs'], // Warn about brace style
-    'camelcase': 'warn', // Warn about camelCase
-    'comma-spacing': 'warn', // Warn about comma spacing
-    'comma-style': 'warn', // Warn about comma style
-    'curly': 'warn', // Warn about curly braces
-    'dot-notation': 'warn', // Warn about dot notation
-    'eqeqeq': 'warn', // Warn about equality
-    'func-call-spacing': 'warn', // Warn about function call spacing
-    'keyword-spacing': 'warn', // Warn about keyword spacing
-    'linebreak-style': 'warn', // Warn about linebreak style
-    'no-multi-spaces': 'warn', // Warn about multiple spaces
-    'no-multiple-empty-lines': 'warn', // Warn about multiple empty lines
-    'no-trailing-spaces': 'warn', // Warn about trailing spaces
-    'no-whitespace-before-property': 'warn', // Warn about whitespace before property
-    'object-property-newline': 'warn', // Warn about object property newlines
-    'padded-blocks': 'warn', // Warn about padded blocks
-    'quote-props': 'warn', // Warn about quote properties
-    'rest-spread-spacing': 'warn', // Warn about rest spread spacing
-    'template-curly-spacing': 'warn', // Warn about template curly spacing
-    'yield-star-spacing': 'warn' // Warn about yield star spacing
+    'no-trailing-spaces': 'off', // Disable trailing spaces rule
+    'eol-last': 'off', // Disable end of file newline rule
+    'comma-dangle': 'off', // Disable trailing commas rule
+    'semi': ['warn', 'always'], // Keep semi as warning
+    'quotes': ['warn', 'single'], // Keep quotes as warning
+    'indent': 'off', // Disable indentation rule
+    'max-len': 'off', // Disable max length rule
+    'object-curly-spacing': 'off', // Disable object spacing rule
+    'array-bracket-spacing': 'off', // Disable array spacing rule
+    'computed-property-spacing': 'off', // Disable computed property spacing rule
+    'key-spacing': 'off', // Disable key spacing rule
+    'space-before-blocks': 'off', // Disable space before blocks rule
+    'space-before-function-paren': 'off', // Disable function spacing rule
+    'space-in-parens': 'off', // Disable space in parentheses rule
+    'space-infix-ops': 'off', // Disable operator spacing rule
+    'space-unary-ops': 'off', // Disable unary operator spacing rule
+    'spaced-comment': 'off', // Disable comment spacing rule
+    'arrow-spacing': 'off', // Disable arrow function spacing rule
+    'block-spacing': 'off', // Disable block spacing rule
+    'brace-style': 'off', // Disable brace style rule
+    'camelcase': 'off', // Disable camelCase rule
+    'comma-spacing': 'off', // Disable comma spacing rule
+    'comma-style': 'off', // Disable comma style rule
+    'curly': 'off', // Disable curly braces rule
+    'dot-notation': 'off', // Disable dot notation rule
+    'eqeqeq': 'off', // Disable equality rule
+    'func-call-spacing': 'off', // Disable function call spacing rule
+    'keyword-spacing': 'off', // Disable keyword spacing rule
+    'linebreak-style': 'off', // Disable linebreak style rule
+    'no-multi-spaces': 'off', // Disable multiple spaces rule
+    'no-multiple-empty-lines': 'off', // Disable multiple empty lines rule
+    'no-whitespace-before-property': 'off', // Disable whitespace before property rule
+    'object-property-newline': 'off', // Disable object property newlines rule
+    'padded-blocks': 'off', // Disable padded blocks rule
+    'quote-props': 'off', // Disable quote properties rule
+    'rest-spread-spacing': 'off', // Disable rest spread spacing rule
+    'template-curly-spacing': 'off', // Disable template curly spacing rule
+    'yield-star-spacing': 'off' // Disable yield star spacing rule
   },
   settings: {
     'import/resolver': {

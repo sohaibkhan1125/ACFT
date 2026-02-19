@@ -1,14 +1,14 @@
-import React from 'react';
+// No React import needed for React 17+ with JSX transform
 
-const EventCard = ({ 
-  icon, 
-  title, 
-  subtitle, 
-  value, 
-  unit, 
-  points, 
+const EventCard = ({
+  icon,
+  title,
+  subtitle,
+  value,
+  unit,
+  points,
   isTime = false,
-  className = '' 
+  className = ''
 }) => {
   const formatValue = (val) => {
     if (isTime) {
@@ -30,7 +30,7 @@ const EventCard = ({
           <p className="text-xs text-gray-600">{subtitle}</p>
         </div>
       </div>
-      
+
       <div className="flex justify-between items-center">
         <div className="text-2xl font-bold text-gray-900">
           {formatValue(value)}
